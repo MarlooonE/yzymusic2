@@ -1,0 +1,76 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Color de fondo suave */
+}
+
+/* Estilos para la barra de navegación */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin: 20px auto;
+  max-width: 800px; /* Ancho máximo para el contenido */
+}
+
+/* Estilos para los títulos */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+/* Estilos para los párrafos */
+p {
+  line-height: 1.6; /* Espaciado entre líneas */
+  color: #666;
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+}
