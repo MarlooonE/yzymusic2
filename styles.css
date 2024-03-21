@@ -1,12 +1,14 @@
-
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Josefin_Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; /* Color de fondo suave */
+  background-image: url(v1bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
-/* Estilos para la barra de navegación */
 header {
   background-color: #333;
   color: white;
@@ -34,27 +36,33 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-
 main {
   padding: 20px;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
-  max-width: 800px; /* Ancho máximo para el contenido */
+  max-width: 800px;
 }
 
-/* Estilos para los títulos */
+#kanye-vultures.gif {
+  display: block;
+  margin: 0 auto; /* Centra el GIF horizontalmente */
+  width: 320px;
+  height: 240px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #333;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: normal;
 }
 
-/* Estilos para los párrafos */
 p {
-  line-height: 1.6; /* Espaciado entre líneas */
+  line-height: 1.6;
   color: #666;
 }
 
-/* Estilos para los enlaces */
 a {
   color: #333;
   text-decoration: none;
@@ -66,11 +74,12 @@ a:hover {
 
 @media (max-width: 768px) {
   nav ul {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   nav ul li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 }
